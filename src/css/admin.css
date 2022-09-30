@@ -1,0 +1,91 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+h1 {
+  font-size: 26px;
+  margin-top: 40px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 20px 0;
+  grid-gap: 22px;
+}
+
+h1:after,
+h1:before {
+  content: " ";
+  border-bottom: 2px solid rgb(100, 149, 237);
+  background-color: #000;
+}
+
+.panel {
+  padding: 40px;
+}
+
+.excursions__item--prototype {
+  display: none;
+}
+
+.excursions__item {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgb(68, 123, 208);
+}
+
+.excursions__title {
+  color: rgb(68, 123, 208);
+}
+
+.excursions__field {
+  margin-bottom: 15px;
+}
+
+.form {
+  padding: 20px 0px 20px 0px;
+  font-size: 18px;
+  color: rgb(100, 149, 237);
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  border: 1px solid rgb(68, 123, 208);
+  border-radius: 4px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.form__label > input {
+  border: 2px solid rgb(68, 123, 208);
+}
+
+.form__label > input:focus {
+  border: 2px solid rgb(100, 149, 237);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.form__field {
+  display: block;
+  min-height: 30px;
+}
+
+.form__field--longtext {
+  height: 100px;
+}
+
+.form__error {
+  min-height: 30px;
+  text-shadow: none;
+}
+
+.excursions__field-input--update,
+.excursions__field-input--remove,
+.order__field-add {
+  border: 2px solid rgb(68, 123, 208);
+  color: rgb(68, 123, 208);
+  min-width: 100px;
+}

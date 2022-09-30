@@ -1,0 +1,96 @@
+body {
+  background-image: url(./../img/ojcow.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  font-size: 12px;
+}
+
+.excursions__item--prototype,
+.summary__item--prototype,
+.active {
+  display: none;
+}
+
+.summary__item {
+  padding-bottom: 20px;
+}
+
+.summary__title {
+  padding-bottom: 10px;
+}
+
+input {
+  border: 2px solid rgba(22, 66, 26, 0.6);
+}
+
+input:focus {
+  border: 2px solid rgba(22, 66, 26, 1);
+}
+
+input::selection {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+input[type="file"] {
+  border: none;
+}
+
+.excursions__field--submit {
+  padding-top: 30px;
+}
+
+.panel__form {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+}
+
+.uploader,
+.order {
+  border-bottom: 1px solid #bbb;
+  margin-bottom: 20px;
+}
+
+.order__total-price {
+  height: 50px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.order__field {
+  height: 80px;
+}
+
+.order__field--submit {
+  height: 20px;
+  padding-bottom: 40px;
+}
+
+.excursions__field-input--submit:disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.excursions__item {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #bbb;
+}
+
+.excursions__error--parent,
+.excursions__error--child {
+  height: 20px;
+}
+
+.order__field-submit,
+.excursions__field-input--submit,
+.summary__btn-remove,
+input[type="file"]::file-selector-button {
+  border: 2px solid #16421a;
+  color: #16421a;
+}

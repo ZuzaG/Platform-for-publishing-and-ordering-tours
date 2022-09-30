@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Tahoma, Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.panel {
+  display: flex;
+  margin: 0 auto;
+}
+
+.panel__excursions {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 350px);
+  justify-content: center;
+  align-items: center;
+}
+
+.excursions__item {
+  border-radius: 5px;
+  margin: 10px;
+  padding: 30px;
+  width: 70%;
+}
+.excursions__title,
+.excursions__description {
+  padding-bottom: 15px;
+}
+
+.order__field-submit,
+.excursions__field-input--submit,
+.summary__btn-remove,
+input[type="file"]::file-selector-button,
+.excursions__field-input--update,
+.excursions__field-input--remove,
+.order__field-add {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
+.order__field-submit:hover,
+.excursions__field-input--submit:hover,
+.summary__btn-remove,
+input[type="file"]::file-selector-button:hover,
+.excursions__field-input--update:hover,
+.excursions__field-input--remove:hover,
+.order__field-add:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.order__field-submit:active,
+.excursions__field-input--submit:active,
+.summary__btn-remove,
+input[type="file"]::file-selector-button:active,
+.excursions__field-input--update:active,
+.excursions__field-input--remove:active,
+.order__field-add:active {
+  position: relative;
+  top: 1px;
+}
+
+input {
+  margin-top: 5px;
+  background: transparent;
+  outline: none;
+  padding: 2px;
+  margin-bottom: 5px;
+  transition: 0.1s;
+  border-radius: 2px;
+}
